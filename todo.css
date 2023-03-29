@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.list-container {
+    display: grid;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#task {
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#submit {
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: 1rem;
+}
