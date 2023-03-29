@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasks</title>
+    <link rel="stylesheet" href="todo.css">
     <script>
         document.addEventListener('DOMContentLoaded', function() {
 
@@ -41,10 +42,14 @@
 </head>
 <body>
     <h1>Tasks</h1>
-    <ul id="tasks"></ul>
-    <form action="">
-        <input id="task" type="text" placeholder="New Task">
-        <input id="submit" type="submit">
-    </form>
+    <div class="list-container">
+        <ul id="tasks"></ul>
+    </div>
+    <div class="form-container">
+        <form action="">
+            <input id="task" type="text" placeholder="New Task">
+            <input id="submit" type="submit">
+        </form>
+    </div>
 </body>
 </html>
