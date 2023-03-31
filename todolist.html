@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasks</title>
     <link rel="stylesheet" href="todo.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
 
-            // by default the submit shoudl be disabled 
+            // by default the submit should be disabled 
             document.querySelector('#submit').disabled = true;
 
             document.querySelector('#task').onkeyup = function() {
@@ -21,6 +22,7 @@
             
             }
 
+           
             document.querySelector('form').onsubmit = function() {
                 const task = document.querySelector('#task').value;
                 
@@ -33,15 +35,17 @@
                 document.querySelector('#submit').disabled = true;
 
                 
-
                 //stop form from submitting 
                 return false;
             }
         })
+            
     </script>
+    
 </head>
 <body>
     <h1>Tasks</h1>
+    <p><span class="auto-type"></span></p>
     <div class="list-container">
         <ul id="tasks"></ul>
     </div>
@@ -51,5 +55,14 @@
             <input id="submit" type="submit">
         </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+               strings: ["Enter list in the textbox bellow."],
+               typeSpeed: 90,
+               backSpeed: 80,
+               loop: true
+           })
+   </script>
 </body>
 </html>
